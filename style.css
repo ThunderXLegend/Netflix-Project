@@ -1,0 +1,152 @@
+/* style.css */
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+ }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .head{
+    /* background-color: rgb(92, 101, 231); */
+    position: absolute;
+    top: 10;
+    left: 10;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    z-index: 10000;
+}
+
+.container .head a{
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    padding:8px 15px;
+    border-radius: 4px;
+}
+
+.container .head img{
+    width: 13%;
+}
+
+.banner{
+   /* background-color: red; */
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.banner .imgFit{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.banner .box{
+    position: absolute;
+    /* background-color: aqua; */
+    z-index: 1000;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.banner .box .heading{
+    /* background-color: rgb(75, 75, 235); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .box .heading h1{
+    font-size: 3.125em;
+    color: white;
+    font-weight: 600;
+    width: 80%;
+}
+
+.banner .box .heading h5{
+    font-size: 1.4em;
+    color: white;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.banner .box .heading p{
+    font-size: 1.1em;
+    color: white;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.banner .box .Email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .box .Email input{
+    min-width: 400px;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px 10px 0 0;
+    outline: none;
+    align-items: center;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    color: black;
+}
+
+.banner .box .Email input::placeholder{
+    position: absolute;
+    left: 10px;
+    top: 22px;
+}
+
+.banner .box .Email a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: red;
+    min-width: 200px;
+    line-height: 61px;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, black,transparent);
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, black,transparent);
+}
